@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Yong Zhao's academic page</title><meta name="author" content="Luke Y. Zhao"><link rel="shortcut icon" href="/img/favicon.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><header id="page_header"><div class="header_wrap"><div id="blog_name"><a class="blog_title" id="site-name" href="/">Yong Zhao's academic page</a></div><button class="menus_icon"><div class="navicon"></div></button><ul class="menus_items"><li class="menus_item"><a class="site-page" href="/Publications"> Publications</a></li><li class="menus_item"><a class="site-page" href="/Grants"> Grants</a></li><li class="menus_item"><a class="site-page" href="/Gallery"> Gallery</a></li><li class="menus_item"><a class="site-page" href="/Research"> Research</a></li><li class="menus_item"><a class="site-page" href="/download"> Download</a></li><li class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lukezy.github.io/"> Blog</a></li></ul></div></header><main id="page_main"><div class="side-card sticky"><div class="card-wrap" itemscope itemtype="http://schema.org/Person"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/profile.png'" alt="avatar"></div><div class="author-discrip"><h3>Luke Y. Zhao</h3><p class="author-bio"></p></div><div class="author-links"><button class="btn m-social-links">Links</button><ul class="social-icons"><li><a class="social-icon" href="https://github.com/LukeZy" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li></ul><ul class="social-links"><li><a class="e-social-link" href="https://scholar.google.com/schhp?hl=zh-CN&amp;as_sdt=0,5" target="_blank"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li><li><a class="e-social-link" href="https://orcid.org/0000-0002-5290-8358" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i><span>ORCID</span></a></li></ul></div></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><h2 class="page-title">研究方向</h2><article><p>我的研究工作主要围绕<strong>格子 Boltzmann 方法（Lattice Boltzmann Method, LBM）及其在复杂流动与多物理场耦合问题中的应用</strong>展开。研究工作以介观建模和高性能数值计算为基础，关注复杂边界、多相多组分、流固声耦合、生物医学流动、油气藏孔隙尺度输运以及人工智能辅助建模等问题，服务于航空航天、能源动力、生物医学工程和智能装备等应用场景。</p>
+<span id="more"></span>
+
+<p>从整体上看，研究主线可以概括为：以 LBM 为核心数值方法，以 GPU 并行计算和人工智能算法为重要工具，面向复杂工程问题建立稳定、高效、可扩展的数值模拟与预测模型。</p>
+<h2 id="一、基于-CUDA-的高性能并行算法"><a href="#一、基于-CUDA-的高性能并行算法" class="headerlink" title="一、基于 CUDA 的高性能并行算法"></a>一、基于 CUDA 的高性能并行算法</h2><p>复杂三维流动问题通常具有网格规模大、时间推进步数多、计算量高等特点。针对这一问题，我开展了基于 CUDA 的并行算法研究，将格子 Boltzmann 方法的局部演化、碰撞迁移和边界处理过程映射到 GPU 并行架构上，以提高大规模三维流动模拟的计算效率。</p>
+<p>相关工作主要包括：</p>
+<ul>
+<li><strong>三维方腔流并行算法实现</strong>：围绕经典三维方腔流问题，构建 GPU 加速求解框架，对流线结构、速度场分布和加速比进行分析；</li>
+<li><strong>三维自然对流并行算法实现</strong>：针对热浮力驱动流动，建立三维自然对流并行计算模型，并与文献结果进行对比验证。</li>
+</ul>
+<p>这一方向的目标是提升复杂流动模拟的计算效率，为后续多物理场、多相流和大规模工程问题模拟提供高性能计算支撑。<br><img src="research-direction-slide-1.png" alt="pic1" title="研究方向一概览：基于 CUDA 的并行算法"></p>
+<h2 id="二、流-固-声耦合问题模拟"><a href="#二、流-固-声耦合问题模拟" class="headerlink" title="二、流-固-声耦合问题模拟"></a>二、流-固-声耦合问题模拟</h2><p>流体与结构之间的相互作用广泛存在于工程和自然系统中，例如弹性梁振动、仿生鱼游动、旋转机械噪声和螺旋桨流噪声等。针对这类问题，我关注流场、结构运动和声场之间的耦合机制，开展流-固耦合以及流-固-声耦合数值模拟研究。</p>
+<p>在流-固耦合方面，主要研究对象包括：</p>
+<ul>
+<li>流管中的变形梁；</li>
+<li>圆柱后柔性梁拍动；</li>
+<li>仿生鱼自主游动。</li>
+</ul>
+<p>在流-固-声耦合方面，进一步关注流动诱导噪声和声传播问题，研究对象包括：</p>
+<ul>
+<li>刚性圆柱声散射；</li>
+<li>三维旋转体流噪声辐射；</li>
+<li>P4119 标准桨流噪声模拟。</li>
+</ul>
+<p>该方向的核心在于建立流场、结构动力学和声学传播之间的统一数值模拟框架，为水下航行器、旋转机械、仿生推进和低噪声设计等问题提供理论与计算基础。<br><img src="research-direction-slide-2.png" alt="pic2" title="研究方向二概览：流-固-声耦合问题建模"></p>
+<h2 id="三、复杂条件下的流体流动模拟"><a href="#三、复杂条件下的流体流动模拟" class="headerlink" title="三、复杂条件下的流体流动模拟"></a>三、复杂条件下的流体流动模拟</h2><p>复杂流体流动往往伴随真实几何边界、多尺度结构和多物理过程耦合。围绕这一问题，我开展了生物医学流动和油气藏孔隙尺度流动模拟研究。</p>
+<h3 id="3-1-颅内动脉瘤血液动力学研究"><a href="#3-1-颅内动脉瘤血液动力学研究" class="headerlink" title="3.1 颅内动脉瘤血液动力学研究"></a>3.1 颅内动脉瘤血液动力学研究</h3><p>针对颅内动脉瘤等复杂血管几何中的血流动力学问题，研究流程包括医学图像获取、图像处理、三维动脉瘤模型重建以及个体化数值模拟。通过对局部流场结构、壁面剪切应力和血液动力学特征进行分析，可以为动脉瘤风险评估和个体化诊疗提供计算参考。</p>
+<p>相关项目支撑包括：</p>
+<ul>
+<li>国家自然科学基金面上项目“颅内动脉瘤血流动力学的格子 Boltzmann 建模与仿真”，No. 11272132，2013.1—2016.12，项目参与人。</li>
+</ul>
+<h3 id="3-2-油气藏孔隙尺度模拟"><a href="#3-2-油气藏孔隙尺度模拟" class="headerlink" title="3.2 油气藏孔隙尺度模拟"></a>3.2 油气藏孔隙尺度模拟</h3><p>在油气藏开发过程中，孔隙尺度的多相多组分输运、CO₂ 驱替、岩石溶蚀与沉积等过程对宏观采收率具有重要影响。围绕这一问题，我参与了基于 GPU 的三维数字岩心模拟、油水两相驱替模拟、CO₂ 驱油微观指进过程模拟以及微尺度效应建模研究。</p>
+<p>相关项目支撑包括：</p>
+<ul>
+<li>国家自然科学基金重点项目“孔隙介质中多相多组分反应流体输运的多尺度建模与机理研究”，No. 51836003，2019.1—2023.12，项目参与人。<br><img src="research-direction-slide-3.png" alt="pic3" title="研究方向三概览：复杂条件下的流体流动模拟"></li>
+</ul>
+<h2 id="四、多物理场多相流模拟"><a href="#四、多物理场多相流模拟" class="headerlink" title="四、多物理场多相流模拟"></a>四、多物理场多相流模拟</h2><p>多相流问题通常涉及相界面演化、热质传递、相变、外场调控和复杂边界作用，是能源、材料和电子器件热管理等领域的重要基础问题。我主要围绕 3D 打印过程介观模拟和电流体强化芯片散热开展研究。</p>
+<h3 id="4-1-3D-打印过程的介观模拟"><a href="#4-1-3D-打印过程的介观模拟" class="headerlink" title="4.1 3D 打印过程的介观模拟"></a>4.1 3D 打印过程的介观模拟</h3><p>在激光增材制造和粉末床熔融过程中，粉末颗粒熔化、熔池流动、温度场演化和界面变形等过程高度耦合。基于 LBM 的介观模拟方法能够较好地描述粉末颗粒熔化、温度与速度分布以及局部流动结构，为理解增材制造过程中的传热传质机理提供数值工具。</p>
+<p>相关项目支撑包括：</p>
+<ul>
+<li>国家重点研发计划“航空零件激光增材制造过程的数值模拟关键技术及软件”，No. 2017YFE0100100，2017.10—2020.9，项目骨干；</li>
+<li>国家自然科学基金青年项目“基于格子 Boltzmann 方法的粉末床熔融过程介观建模与仿真”，No. 12302373，2024.1—2026.12，主持人。</li>
+</ul>
+<h3 id="4-2-基于电流体强化芯片散热的研究"><a href="#4-2-基于电流体强化芯片散热的研究" class="headerlink" title="4.2 基于电流体强化芯片散热的研究"></a>4.2 基于电流体强化芯片散热的研究</h3><p>随着芯片功率密度不断提高，传统散热方式面临较大挑战。电场调控微对流为强化芯片冷却提供了新的思路。围绕这一问题，我关注电场作用下的微对流调控、固液相变和汽液相变过程，研究外电场对流动结构、相界面演化和传热效率的影响。</p>
+<p>相关项目支撑包括：</p>
+<ul>
+<li>国家自然科学基金面上项目“多机制耦合下电场调控气液相变的介观模拟及机理分析”，No. 12472297，2025.1—2028.12，项目参与人。<br><img src="research-direction-slide-4.png" alt="pic4" title="研究方向四概览：多物理场多相流建模"></li>
+</ul>
+<h2 id="五、人工智能算法的应用"><a href="#五、人工智能算法的应用" class="headerlink" title="五、人工智能算法的应用"></a>五、人工智能算法的应用</h2><p>在复杂工程模拟中，高保真数值模型往往计算成本较高，难以直接用于快速预测、实时优化和智能决策。因此，我也关注人工智能算法与机理模型的结合，探索数据驱动方法在复杂流动预测和智能控制中的应用。</p>
+<h3 id="5-1-油气藏代理模型"><a href="#5-1-油气藏代理模型" class="headerlink" title="5.1 油气藏代理模型"></a>5.1 油气藏代理模型</h3><p>针对油气藏数值模拟耗时长的问题，研究思路是以三维渗透率场等地质参数作为输入，结合 CNN、LSTM 和 ConvLSTM 等深度学习结构，构建能够预测饱和度场、压力场以及井产量曲线的代理模型。</p>
+<p>基本流程包括：</p>
+<ol>
+<li>建立基础算例，随机设置地质模型，形成多个平行算例；</li>
+<li>并发开展数值模拟，提取各时刻压力场、饱和度场和井产量数据；</li>
+<li>构建训练集与测试集，训练编码器、解码器和时序预测网络；</li>
+<li>利用机理模型对预测结果进行校验与迭代优化。</li>
+</ol>
+<p>相关项目支撑包括：</p>
+<ul>
+<li>企业委托项目“油气藏强化学习技术研究”，No. 20251260259，2025.01—2025.12，项目骨干。<br><img src="research-direction-slide-5.png" alt="pic5" title="研究方向五概览：人工智能算法在油气藏代理模型中的应用"></li>
+</ul>
+<h3 id="5-2-上肢康复机器人"><a href="#5-2-上肢康复机器人" class="headerlink" title="5.2 上肢康复机器人"></a>5.2 上肢康复机器人</h3><p>在智能康复装备方向，我开展了上肢康复机器人预研项目，重点关注基于深度强化学习的动态平衡追踪算法、运动意图识别、自适应阻抗控制以及小脑协同认知训练等问题。</p>
+<p>该方向的研究重点包括：</p>
+<ul>
+<li>建立运动学闭链的空间映射关系；</li>
+<li>设计动态平衡追踪与自适应控制算法；</li>
+<li>构建意图识别与人机交互框架；</li>
+<li>开展概念验证与性能测试。</li>
+</ul>
+<p>该研究面向康复训练中的主动参与、柔顺交互和个体化控制需求，探索人工智能算法在智能康复机器人中的应用潜力。<br><img src="research-direction-slide-6.png" alt="pic6" title="研究方向五概览：上肢康复机器人预研项目"></p>
+</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Publications"> Publications</a></li><li class="nav_item"><a class="nav-page" href="/Grants"> Grants</a></li><li class="nav_item"><a class="nav-page" href="/Gallery"> Gallery</a></li><li class="nav_item"><a class="nav-page" href="/Research"> Research</a></li><li class="nav_item"><a class="nav-page" href="/download"> Download</a></li><li class="nav_item"><a class="nav-page" target="_blank" rel="noopener" href="https://lukezy.github.io/"> Blog</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="copyright">&copy;2021 - 2026 by Luke Y. Zhao</div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
